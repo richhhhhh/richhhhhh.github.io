@@ -111,6 +111,10 @@ webpackJsonp([1], {
             return t
         }, function (t) {
             var e = void 0;
+            console.log("t.url1",t.url);
+            t.headers.append("Authorization", "token " + e);
+            console.log("t.headers2",t.headers);
+
             switch (t.response.status) {
                 case 401:
                     e = "Token错误";
