@@ -100,7 +100,9 @@ webpackJsonp([1], {
             if (e) {
                 var i = "?";
                 // t.url.indexOf("?") >= 0 && (i = "&"), t.url = t.url + i + "access_token=" + e;
-                t.headers.append("Authorization", "token " + e)
+                console.log("t.url",t.url);
+                t.headers.append("Authorization", "token " + e);
+                console.log("t.headers",t.headers);
             }
             return t
         }, function (t) {
