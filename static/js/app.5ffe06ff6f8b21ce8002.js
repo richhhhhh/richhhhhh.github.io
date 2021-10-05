@@ -99,10 +99,7 @@ webpackJsonp([1], {
             var e = j.state.token.token;
             if (e) {
                 var i = "?";
-                // t.url.indexOf("?") >= 0 && (i = "&"), t.url = t.url + i + "access_token=" + e;
-                console.log("t.url",t.url);
-                t.headers.append("Authorization", "token " + e);
-                console.log("t.headers",t.headers);
+                t.url.indexOf("?") >= 0 && (i = "&"), t.url = t.url + i + "access_token=" + e
             }
             return t
         }, function (t) {
@@ -111,10 +108,6 @@ webpackJsonp([1], {
             return t
         }, function (t) {
             var e = void 0;
-            console.log("t.url1",t.url);
-            t.headers.append("Authorization", "token " + e);
-            console.log("t.headers2",t.headers);
-
             switch (t.response.status) {
                 case 401:
                     e = "Token错误";
